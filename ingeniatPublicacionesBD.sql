@@ -30,7 +30,7 @@ CREATE TABLE `publicacion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Tabla donde se guardan las publicaciones echas por el usuario';
 
 -- --------------------------------------------------------
-INSERT INTO `publicacion` (`IdPublicacion`, `IdUsuario`, `Titulo`, `Descripcion`, `FecRegistro`, `FecMovimiento`, `activo`) VALUES (NULL, '1', 'Publicacion Editada', 'Descripdion editada', '2021-10-04 00:50:02.000000', current_timestamp(), '1');
+
 --
 -- Estructura de tabla para la tabla `roles`
 --
@@ -72,7 +72,6 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Apellido`, `Correo`, `Password`, `IdRol`, `FecRegistro`, `FecMovimiento`) VALUES (NULL, 'Admistrador', '.', 'administrador@correo.com', 'Admin', '5', '2021-10-04 00:48:33.000000', current_timestamp());
 --
 -- Índices para tablas volcadas
 --
@@ -291,3 +290,7 @@ BEGIN
           SELECT @Codigo AS Codigo, @Mensaje AS Mensaje, @IdRegistro AS IdPublicacion;
 END$$
 DELIMITER ;
+
+INSERT INTO `usuario` (`IdUsuario`, `Nombre`, `Apellido`, `Correo`, `Password`, `IdRol`, `FecRegistro`, `FecMovimiento`) VALUES (NULL, 'Admistrador', '.', 'administrador@correo.com', 'Admin', '5', '2021-10-04 00:48:33.000000', current_timestamp());
+
+INSERT INTO `publicacion` (`IdPublicacion`, `IdUsuario`, `Titulo`, `Descripcion`, `FecRegistro`, `FecMovimiento`, `activo`) VALUES (NULL, '1', 'Publicacion Editada', 'Descripdion editada', '2021-10-04 00:50:02.000000', current_timestamp(), '1');
