@@ -3,7 +3,7 @@
 -Importar el archivo SQL 
 -copiar la carpeta ProyectoIngeniatAldoRamirez a htdocs para poder consumir la api. 
 -las pruebas se realizaron en Postman!.
-
+- La ruta es : http://127.0.0.1/ProyectoIngeniatAldoRamirez/controller/APIPublicaciones.php
   REQUEST GET: USUARIO DEFAULT CARGADO EN LA BD PARA PRUEBAS { "Correo":"administrador@correo.com", "Password":"Admin", "accion":"Login" }
   
   RESPONSE: {"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzMzMDMxODEsImF1ZCI6IjMzMmNhODc1MDY3ZGNmZDRiNjg3YmM3OTUwOTlhZWVjNDEzMTIwZWQiLCJkYXRhIjp7IklkVXNlciI6bnVsbCwiTm9tYnJlIjpudWxsLCJSb2wiOm51bGx9fQ.Smo9CbbG7eUElxn1imgCN6WmyMtkttL4kPUtbin7ZcM"}
