@@ -44,7 +44,7 @@ switch ($opcPOST) {
             }
             if ($dataToken->Rol == 5 || 
                 $dataToken->Rol == 4 || 
-                $dataToken->Rol == 3) {*/
+                $dataToken->Rol == 3) {
                     $SPModel->setORdb($oRdb);
                     $SPModel->setIdUser($dataToken->IdUser);
                     $SPModel->setTitulo($decoded['Titulo']);
