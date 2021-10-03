@@ -1,8 +1,11 @@
 # Api-Ingeniat
 
 -Importar el archivo SQL 
+
 -copiar la carpeta ProyectoIngeniatAldoRamirez a htdocs para poder consumir la api. 
+
 -las pruebas se realizaron en Postman!.
+
 - La ruta es : http://127.0.0.1/ProyectoIngeniatAldoRamirez/controller/APIPublicaciones.php
 
 
