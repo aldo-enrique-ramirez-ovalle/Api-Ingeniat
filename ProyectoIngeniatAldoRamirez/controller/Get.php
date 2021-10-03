@@ -11,7 +11,7 @@ switch ($opcionGET) {
         if($resLogin['Codigo'] == 0){
             $oAuthJWT = new AuthJWT();
             $token = $oAuthJWT->SignIn([
-                                        'IdUser' => $resLogin['IdUser'],
+                                        'IdUser' => $resLogin['IdUsuario'],
                                         'Nombre' => $resLogin['Nombre'],
                                         'Rol' => $resLogin['nIdRol']
                                        ]);
